@@ -2,11 +2,19 @@ aside {
   position: absolute;
   color: white;
   width: 192px;
-  background-color: rgb(228, 79, 79);
+  background-image: url("../images/background-aside.png");
+  background-repeat: repeat;
+  background-position: center;
+  /* background-size: contain; */
+  overflow: hidden;
   left: 0;
   top: 78px;
   bottom: 100px;
   border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(223, 70, 70);
 }
 
 nav ul li {
@@ -35,4 +43,20 @@ nav ul li {
 nav ul li:nth-child(2) img,
 nav ul li:nth-child(3) img {
   margin-left: 0.5rem;
+}
+
+.line-separate {
+  height: 1px;
+  width: 95%;
+  background-color: #e1e1e1;
+  position: absolute;
+  right: 0;
+}
+
+.settings {
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 }
