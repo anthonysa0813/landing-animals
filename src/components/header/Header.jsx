@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../images/logo-one.png";
-import menu from "../images/menu.svg";
-import notification from "../images/notification.svg";
+import logo from "../../images/logo-one.png";
+import menu from "../../images/menu.svg";
+import notification from "../../images/notification.svg";
 import "./header.css";
 
 const Header = () => {

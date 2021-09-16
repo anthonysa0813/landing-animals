@@ -1,9 +1,9 @@
 import React from "react";
 import "./cards.css";
-import avatar from "../images/cards/avatar.png";
-import diamond from "../images/cards/diamonds.svg";
-import heart from "../images/cards/heart.svg";
-import report from "../images/cards/report.svg";
+import avatar from "../../images/cards/avatar.png";
+import diamond from "../../images/cards/diamonds.svg";
+import heart from "../../images/cards/heart.svg";
+import report from "../../images/cards/report.svg";
 
 const Cards = () => {
   return (

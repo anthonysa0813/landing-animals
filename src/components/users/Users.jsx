@@ -1,10 +1,11 @@
 import React from "react";
-import path from "../images/users/path.svg";
-import craft from "../images/users/craft.svg";
-import people from "../images/users/people.svg";
-import searchIcon from "../images/users/searchIcon.svg";
+import path from "../../images/users/path.svg";
+import craft from "../../images/users/craft.svg";
+import people from "../../images/users/people.svg";
+import searchIcon from "../../images/users/searchIcon.svg";
 import "./users.css";
-import Cards from "./Cards";
+import Cards from "../cards/Cards";
+import SearchInput from "./SearchInput";
 
 const Users = () => {
   return (
@@ -28,10 +29,7 @@ const Users = () => {
           <div className="title-block ">
             <h1>Pathfindees |</h1>
 
-            <div className="searchInput ">
-              <input type="text" placeholder="Search pathfindee" />
-              <img src={searchIcon} alt="" />
-            </div>
+            <SearchInput />
           </div>
           <div className="contenedorCards ">
             <Cards />

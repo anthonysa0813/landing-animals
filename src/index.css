@@ -11,3 +11,17 @@ code {
 .text-center {
   text-align: center;
 }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: calc(100vh - 76px);
+  padding-block-start: 2rem;
+}
+
+.firstRow {
+  grid-column-start: 3;
+  grid-column-end: 13;
+  /* background-color: aqua; */
+  flex: 1;
+}
