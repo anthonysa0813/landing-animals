@@ -17,8 +17,17 @@ main {
 
 .info-content {
   display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: white;
   justify-content: space-between;
   padding-inline: 1rem;
+  position: absolute;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  top: 30%;
+  left: 5%;
 }
 
 .blockImage {
@@ -57,25 +66,28 @@ h4 {
 
 .modeContent {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-block-start: 45px;
-  margin-inline-end: 45px;
+  margin-block-start: 30%;
+  /* margin-inline-end: 45px; */
 
-  padding-block-end: 0.5rem;
+  /* padding-block-end: 0.5rem; */
   border-bottom: 2px solid #de2566;
 }
 
 .habilities {
   display: flex;
+
   flex-basis: 40%;
 }
 
 .hability {
   flex: 1;
   display: flex;
+  margin-block-end: 1rem;
   /* justify-content: center; */
   align-items: center;
-  padding-inline-start: 1rem;
+  padding-block-start: 1rem;
   gap: 1rem;
 }
 .modeContent button {
@@ -84,6 +96,7 @@ h4 {
   border: none;
   color: white;
   border-radius: 2rem;
+  order: -1;
 }
 
 .sortContent {
@@ -98,6 +111,7 @@ h4 {
 .tableContent {
   padding-inline-end: 2rem;
   margin-block-start: 2rem;
+  display: none;
 }
 
 .tableContent tr th {
@@ -167,4 +181,52 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
 
 .content-select:hover i {
   margin-top: 3px;
+}
+
+@media screen and (min-width: 480px) {
+  .habilities {
+    display: flex;
+    flex-basis: 40%;
+  }
+  .modeContent {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 45px;
+    margin-inline-end: 45px;
+
+    padding-block-end: 0.5rem;
+    border-bottom: 2px solid #de2566;
+  }
+  .tableContent {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .info-content {
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .info-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-inline: 1rem;
+  }
+  .modeContent {
+    flex-direction: row;
+  }
+  .modeContent button {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1083px) {
+  .info-content {
+    justify-content: space-between;
+  }
 }

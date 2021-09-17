@@ -6,6 +6,8 @@ import version from "../../images/skills/version.svg";
 import sortIcon from "../../images/skills/sortIcon.svg";
 import "./skills.css";
 import { UsuarioContext } from "../../context/UsuarioContext";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
 
 const Skills = () => {
   const { usuario } = useContext(UsuarioContext);
@@ -15,7 +17,7 @@ const Skills = () => {
       <main>
         <div className="main-content">
           <div className="info-content ">
-            <div className="blockTitle">
+            <div className="blockTitle ">
               <h1>Skill Matrix</h1>
               <SearchInput />
             </div>
@@ -31,7 +33,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="modeContent ">
-            <div className="habilities ">
+            <div className="habilities  ">
               <div className="hability">
                 <img src={diamond} alt="" />
                 <span>Hardskills</span>
@@ -52,7 +54,7 @@ const Skills = () => {
             <img src={sortIcon} alt="" />
           </div>
           <div className="tableContent">
-            <table class="table table-responsive-sm table-responsive-md caption-top">
+            <table class="table table-responsive table-responsive-md  table-responsive-md caption-top">
               <thead>
                 <tr>
                   <th scope="col">Skill</th>
@@ -65,48 +67,6 @@ const Skills = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>
-                    <div className="content-select">
-                      <select name="" id="">
-                        <option value="Familiar">Click to evaluate</option>
-                        <option value="Familiar">Familiar</option>
-                        <option value="Fluent">Fluent</option>
-                        <option value="Experienced">Experienced</option>
-                        <option value="Proficient">Proficient</option>
-                        <option value="Expert">Expert</option>
-                      </select>
-                      <i></i>
-                    </div>
-                  </td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>
-                    <div className="content-select">
-                      <select name="" id="">
-                        <option value="Familiar">Click to evaluate</option>
-                        <option value="Familiar">Familiar</option>
-                        <option value="Fluent">Fluent</option>
-                        <option value="Experienced">Experienced</option>
-                        <option value="Proficient">Proficient</option>
-                        <option value="Expert">Expert</option>
-                      </select>
-                      <i></i>
-                    </div>
-                  </td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                </tr>
                 <tr>
                   <td>Mark</td>
                   <td>Otto</td>

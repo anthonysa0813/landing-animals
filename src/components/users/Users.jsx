@@ -11,9 +11,9 @@ const Users = () => {
   return (
     <main className="">
       <div className="main-content ">
-        <div className="wrapper">
-          <div className="user-content">
-            <div className="user-links">
+        <div className="wrapper ">
+          <div className="user-content  ">
+            <div className="user-links ">
               <img src={path} alt="" />
               <p>Pathfindees</p>
             </div>
@@ -26,8 +26,8 @@ const Users = () => {
               <p>People in charge</p>
             </div>
           </div>
-          <div className="title-block ">
-            <h1>Pathfindees |</h1>
+          <div className="title-block  ">
+            <h1>Pathfindees </h1>
 
             <SearchInput />
           </div>

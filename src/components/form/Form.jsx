@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { UsuarioContext } from "../../context/UsuarioContext";
+import Message from "../Message";
 import "./form.css";
 
 const Form = () => {
@@ -9,6 +10,8 @@ const Form = () => {
     role: "",
     level: "",
   });
+  const [error, setError] = useState(false);
+  const [messageActive, setMessageActive] = useState(false);
 
   const { nombre, role, level } = user;
 
@@ -24,8 +27,14 @@ const Form = () => {
 
     if (!nombre.trim() || !role.trim() || !level.trim()) {
       console.log("campo vacío :c");
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 3000);
       return;
     }
+    setError(false);
+    setMessageActive(true);
     setUsuario({
       ...usuario,
       nombre,
@@ -36,8 +45,12 @@ const Form = () => {
 
   return (
     <main className="main-content form ">
-      <div className="containerForm ">
+      <div className="containerForm  ">
         <div className="firstRow  ">
+          {error && (
+            <p className="alert alert-danger">Existe un campo vacío!</p>
+          )}
+          {messageActive ? <Message nombre={nombre} /> : null}
           <h1>Create Role</h1>
           <form className="field" onSubmit={handleSubmit}>
             <label htmlFor="">Name*</label>

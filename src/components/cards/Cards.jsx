@@ -23,7 +23,7 @@ const Cards = () => {
         <p>20%</p>
       </div>
       <div className="progressContent">
-        <div className="progress"></div>
+        <div className="progressC"></div>
       </div>
       <div className="progress-advance"></div>
       <hr />

@@ -7,18 +7,20 @@ import "./header.css";
 const Header = () => {
   return (
     <header>
-      <div className="header-logo ">
-        <img src={logo} alt="Logo de la página" />
-      </div>
-      <div className="header-menu ">
-        <img src={menu} alt="menu de página" className="menu" />
-        <div className="barra"></div>
-        <img
-          src={notification}
-          alt="logo de notificación"
-          className="notification"
-        />
-        <p>Cesar Avellaneda</p>
+      <div className="header-logo  "></div>
+      <div className="header-menu    ">
+        <div className="groupOne ">
+          <img src={menu} alt="menu de página" className="menu" />
+          <div className="barra"></div>
+        </div>
+        <div className="groupTwo  ">
+          <img
+            src={notification}
+            alt="logo de notificación"
+            className="notification"
+          />
+          <p>Cesar Avellaneda</p>
+        </div>
       </div>
     </header>
   );

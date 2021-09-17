@@ -69,12 +69,12 @@ p {
   /* display: block; */
   background-color: #e1e1e1;
 }
-.progress {
+.progressC {
   height: 6px;
   width: 40%;
   border-radius: 4rem;
   /* display: block; */
-  background-color: #3c8df7;
+  background-color: #0f70f0;
 }
 
 .qualitiesContent {
@@ -95,4 +95,5 @@ p {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
 }

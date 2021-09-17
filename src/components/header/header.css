@@ -9,10 +9,18 @@ header {
 }
 
 .header-logo {
+  background-image: url(../../images/logo-responsive.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 78px;
+  width: 78px;
 }
-
+header p {
+  margin: 0;
+}
 .header-logo img {
   width: 146px;
   margin-left: 14px;
@@ -26,9 +34,21 @@ header {
 
 .header-menu {
   display: flex;
+  flex-basis: 70%;
+  justify-content: space-around;
 
-  margin-right: 26px;
+  /* margin-right: 26px; */
   align-items: center;
+}
+.groupOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.groupTwo {
+  order: -1;
+  display: flex;
+  margin-inline-end: 1rem;
 }
 
 .menu {
@@ -39,7 +59,8 @@ header {
 .notification {
   width: 27px;
   height: 22px;
-  margin: 0 29px 0 20px;
+  /* margin: 0 29px 0 20px; */
+  margin-inline-end: 1rem;
 }
 
 .barra {
@@ -47,4 +68,46 @@ header {
   width: 1px;
   margin-left: 23px;
   background-color: #00000026;
+}
+
+@media screen and (min-width: 480px) {
+  .header-menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header-logo {
+    background-image: url(../../images/logo-two.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 78px;
+    width: 178px;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .header-menu {
+    flex-basis: 20%;
+    justify-content: space-around;
+  }
+  .groupTwo {
+    margin: 0;
+    align-items: center;
+    margin-inline-start: 1rem;
+  }
+  .groupOne {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .groupTwo {
+    margin: 0;
+    align-items: center;
+    margin-inline-start: 0;
+  }
 }

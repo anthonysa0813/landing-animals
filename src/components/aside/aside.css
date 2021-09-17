@@ -1,19 +1,12 @@
 aside {
-  position: absolute;
   color: white;
-  width: 192px;
   background-image: url("../../images/background-aside.png");
   background-repeat: repeat;
   background-position: center;
-  /* background-size: contain; */
+  height: 200px;
+  position: relative;
   overflow: hidden;
-  left: 0;
-  top: 78px;
-  bottom: 100px;
-  border-bottom-right-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* border-bottom-right-radius: 2rem; */
   background-color: rgb(223, 70, 70);
 }
 
@@ -22,22 +15,32 @@ aside {
 }
 
 nav ul {
+  /* padding: 1rem; */
+  /* height: 300px; */
+  /* flex-direction: column;
+  align-items: flex-start; */
   display: flex;
-  padding: 1rem;
-  height: 300px;
-  flex-direction: column;
-  align-items: flex-start;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 .link {
   /* margin-top: 1rem; */
   margin-bottom: 1.5rem;
   display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   color: white;
   text-decoration: none;
 }
-
+.link p {
+  /* display: none; */
+  margin: 0;
+}
 .link:nth-child(2) img,
 .link:nth-child(3) img {
   margin-left: 0.5rem;
@@ -49,12 +52,96 @@ nav ul {
   background-color: #e1e1e1;
   position: absolute;
   right: 0;
+  display: none;
 }
 
 .settings {
   display: flex;
   padding: 1rem;
+
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  bottom: 0;
+  z-index: 100;
+
+  color: rgb(26, 25, 25);
+}
+.settings p {
+  margin: 0;
+}
+
+.settings img {
+  background-color: red;
+  border-radius: 50%;
+}
+/* responsive  */
+
+@media screen and (min-width: 480px) {
+  aside {
+    position: absolute;
+    color: white;
+    width: 192px;
+    height: 80%;
+    background-image: url("../../images/background-aside.png");
+    background-repeat: repeat;
+    background-position: center;
+    overflow: hidden;
+    left: 0;
+    top: 78px;
+    bottom: 100px;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(223, 70, 70);
+  }
+  nav ul {
+    display: flex;
+    padding: 1rem;
+    height: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .link {
+    /* margin-top: 1rem; */
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    width: 100%;
+    height: 80%;
+    text-decoration: none;
+  }
+  .line-separate {
+    display: block;
+  }
+  .settings img {
+    /* background-color: red; */
+    border-radius: none;
+    background-color: none;
+  }
+  .settings {
+    position: static;
+    color: white;
+  }
+}
+@media screen and (min-width: 550px) {
+  aside {
+    width: 100px;
+  }
+  .link p {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 759px) {
+  aside {
+    width: 196px;
+  }
 }

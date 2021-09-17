@@ -9,24 +9,24 @@ import { Link } from "react-router-dom";
 const Aside = () => {
   return (
     <aside className="">
-      <nav>
+      <nav className="">
         <ul className="">
-          <Link className="link" to="/">
+          <Link className="link  " to="/">
             <img src={overview} alt="" />
           </Link>
           <Link className="link" to="/skills">
             <img src={matrix} alt="" />
-            My skill Matrix
+            <p>My skill Matrix</p>
           </Link>
           <Link className="link" to="/new-user">
             <img src={plus} alt="" />
-            Create
+            <p>Create</p>
           </Link>
         </ul>
       </nav>
-      <div className="settings-content ">
+      <div className="settings-content  ">
         <div className="line-separate"></div>
-        <div className="settings">
+        <div className="settings ">
           <img src={settings} alt="" />
           <p>Settings</p>
         </div>
